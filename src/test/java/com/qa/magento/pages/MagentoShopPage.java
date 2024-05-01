@@ -9,6 +9,9 @@ public class MagentoShopPage {
 
     @FindBy(linkText = "Shop")
     private WebElement shopLink;
+
+    //@FindBy(linkText = "Shop")
+    //    private WebElement shopLink;
     @FindBy(xpath = "")
     private WebElement categoryLink;
 
