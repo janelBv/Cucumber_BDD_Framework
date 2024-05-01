@@ -65,13 +65,19 @@ My current framework is Page Object Model Cucumber (BDD) Framework.
 Main programming language is Java and I use IntelliJ IDE in my company. 
 Our framework uses Selenium WebDriver for browser automation, Maven for dependencies, JUnit for Assertions and Jenkins for CI/CD.
 My framework consists of 4 main packages.
+
 First is the PAGES package. We use a POM Structure to keep my code organized, easy to maintain and clean. So, we basically created a separate Java class for each page of my application where we store all the WebElements and related Methods. 
+
 Second is the RUNNERS package. Here I store my RUNNER class that I execute all my test cases from with DryRun annotations. DryRun is very useful to save time for getting Snips. It will give you snips without executing the steps which is so fast.
 We have some components that: @RunWith will run the cucumber classes and @CucumberOptions is special annotation which has some keywords. For example, plugins It is all about failed Tests run and report creation. With help of this class, I can run my failed tests. tags="@regression" It is all about filtration your test cases.
+
 Third is the STEP_DEFINITIONS package. Here I keep My implemented step definitions. Also, I store my HOOK CLASS where I have Before and After methods that setup my test data and tearDown activities, like clearing a database or closing browser sessions. 
+
 Fourth is the UTILS package. Here I stored my BrowserUtils class.  In my framework I have ConfigReaderClass to protect and hide my private/personal data in a configuration.properties file, where I store data as “Key and Value”.
 
 I have my DriverHelper class to centralize my driver. With help of this class, we are using Private Constructor for Singleton Pattern Design, which ensures only one driver instance of the entire project.
+
 I have a RESOURCES directory where I created Cucumber Feature Files which use GHERKIN language to describe my Test Scenarios. My framework supports Data Driven Testing by using Scenario Outlines. We are also using Excel by using the Apache POI Libraries.
+
 My framework generates HTML reports with Screenshots using the Maven-Cucumber-Report Plugin. Screenshots are important, because sometimes your failures do not mean there is a bug. This failure can be caused by Environment (QA), SERVERS. Environment/ Servers might be down or there might be glitch on the website. Screenshot can help first analyze, before you go deep (Save time).
 Our framework Performed RESTAPI Testing by using REST Assured Library. Also, we perform Database testing through JDBC driver. For repositories we are using GitHub.
