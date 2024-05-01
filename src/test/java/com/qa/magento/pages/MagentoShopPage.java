@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class MagentoShopPage {
 
     @FindBy(linkText = "Shop")
-  private WebElement shopLink;
+    private WebElement shopLink;
     @FindBy(xpath = "")
     private WebElement categoryLink;
 
