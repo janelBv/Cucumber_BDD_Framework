@@ -1,4 +1,5 @@
 Cucumber BDD Framework from Scratch
+
 Title: Automated Test for Magento Shopping Website
 
 This repository contains the test suite implemented using Java, Cucumber, and Selenium WebDriver to automate testing of the Magento web application based on specific steps provided for the Heartland Retail and Heartland Restaurant interview process.
